@@ -1,0 +1,9 @@
+@use 'variables';
+
+.movies {
+    &__container {
+        display: flex;
+        background-color: #fff;
+
+    }
+}

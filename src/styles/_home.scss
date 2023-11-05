@@ -1,0 +1,30 @@
+@use 'variables';
+
+.home {
+    background-color: variables.$sectionColor;
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        padding: 70px 50px 50px;
+        text-align: center;
+        font-weight: 400;
+
+        .title {
+            font-size: 30px;
+            color: #fff;
+            margin: 0;
+            padding: 0 10px 6px;
+
+            &--small {
+                font-size: 22px;
+                color: #fff;
+                margin: 0 0 18px;
+            }
+        }
+
+        a {
+            margin-top: 20px;
+            text-decoration: none;
+        }
+    }
+}

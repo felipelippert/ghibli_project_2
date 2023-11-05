@@ -1,0 +1,47 @@
+@use 'variables';
+@use 'carousel';
+@use 'home';
+
+@font-face {
+    font-family: Lora;
+    src: url("../../assets/fonts/Lora-Regular.ttf");
+    font-weight: 400;
+}
+    @font-face {
+        font-family: Lora;
+        src: url("../../assets/fonts/Lora-Bold.ttf");
+        font-weight: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lora, serif;
+}
+
+body {
+    background-color: variables.$bgColor;
+}
+
+
+@mixin text($fontSize: 14px) {
+    font-size: $fontSize;
+}
+
+.text {
+    @include text;
+    color: variables.$secondaryTxtColor;
+    line-height: 20px;
+    letter-spacing: 1px;
+    margin: 14px 0;
+}
+
+.btn-gold-dark {
+    display: inline-block;
+    font-size: 18px;
+    padding: 14px 20px;
+    color: variables.$btnTxtColor;
+    background-color: variables.$btnBgColor;
+    letter-spacing: 1px;
+}

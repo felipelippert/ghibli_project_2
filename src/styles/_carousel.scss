@@ -1,0 +1,89 @@
+@use 'variables';
+
+.bg-img-1 {
+    background-image: url(../../dist/images/whisper-of-heart.jpg);   
+}
+.bg-img-2 {
+    background-image: url(../../dist/images/poppy\ hill.jpg);
+}
+.bg-img-3 {
+    background-image: url(../../dist/images/only\ yestterday.jpg);
+}
+.bg-img-4 {
+    background-image: url(../../dist/images/mma3202-stills-medium_3.jpg);
+}
+.bg-img-5 {
+    background-image: url("https://www.studioghibli.com.au/wp-content/uploads/2017/07/mma3578br-stills-medium_3.jpg");
+}
+.carousel {
+    .carousel-image {
+        height: 800px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+        .slide__title {
+            background-color: variables.$bgColor;
+            padding: 14px 20px 14px 50px;
+            position: absolute;
+            top: 30px;
+    
+            .h4 {
+                font-size: 14px;
+                letter-spacing: 1px;
+                color: variables.$secondaryTxtColor;
+                margin-bottom: 0;
+            }
+        }
+    
+        .slide__copyright {
+    
+            p {
+                font-size: 8px;
+                color: white;
+                line-height: 20px;
+                opacity: 0.6;
+                padding: 10px 14px;
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    .small__panel {
+        display: block;
+        position: absolute;
+        z-index: 100;
+        bottom: 0;
+        left: 0;
+        padding: 30px;
+        p {
+            font-size: 10px;
+            color: white;
+            opacity: 0.6;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        img {
+            height: 60px;
+        }
+    }
+
+    .big__panel {
+        padding: 30px 50px;
+        background-color: #fff;
+        position: absolute;
+        display: inline-block;
+        bottom: -20px;
+        right: 0;
+        z-index: 100;
+
+        img {
+            width: 360px;
+        }
+    }
+}
+
+
+
