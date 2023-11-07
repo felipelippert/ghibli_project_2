@@ -1,0 +1,35 @@
+@use 'variables';
+
+.footer {
+    background-color: variables.$bgColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    &__container  {
+            position: relative;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            padding: 30px;
+            max-width: 100%;
+    
+        a {
+            display: block;
+            text-decoration: none;
+
+            img {
+                height: 34px;
+                
+            }
+            img.ghibli_logo {
+                height: 50px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

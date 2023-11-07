@@ -15,72 +15,86 @@
 .bg-img-5 {
     background-image: url("https://www.studioghibli.com.au/wp-content/uploads/2017/07/mma3578br-stills-medium_3.jpg");
 }
-.carousel {
-    .carousel-image {
-        height: 800px;
-        background-size: cover;
-        background-repeat: no-repeat;
+
+.carousel__container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .carousel {
+        max-width: 100%;
+        padding: 0;
+        position: relative;
+        width: 100%;
         
-        .slide__title {
-            background-color: variables.$bgColor;
-            padding: 14px 20px 14px 50px;
-            position: absolute;
-            top: 30px;
-    
-            .h4 {
-                font-size: 14px;
-                letter-spacing: 1px;
-                color: variables.$secondaryTxtColor;
-                margin-bottom: 0;
-            }
-        }
-    
-        .slide__copyright {
-    
-            p {
-                font-size: 8px;
-                color: white;
-                line-height: 20px;
-                opacity: 0.6;
-                padding: 10px 14px;
+        .carousel-image {
+                max-height: 800px;
+                min-height: 300px;
+            
+            
+            .slide__title {
+                background-color: variables.$bgColor;
+                padding: 14px 20px 14px 50px;
                 position: absolute;
-                top: 0;
-                right: 0;
+                top: 30px;
+                
+                .h4 {
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    color: variables.$secondaryTxtColor;
+                    margin-bottom: 0;
+                }
+            }
+            
+            .slide__copyright {
+                p {
+                    font-size: 8px;
+                    color: white;
+                    line-height: 20px;
+                    opacity: 0.6;
+                    padding: 10px 14px;
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                }
             }
         }
-    }
-
-    .small__panel {
-        display: block;
-        position: absolute;
-        z-index: 100;
-        bottom: 0;
-        left: 0;
-        padding: 30px;
-        p {
-            font-size: 10px;
-            color: white;
-            opacity: 0.6;
-            margin: 10px 0;
-            text-align: center;
+        
+        .small__panel {
+            display: block;
+            position: absolute;
+            z-index: 100;
+            bottom: 0;
+            left: 0;
+            padding: 30px;
+            p {
+                font-size: 10px;
+                color: white;
+                opacity: 0.6;
+                margin: 10px 0;
+                text-align: center;
+            }
+    
+            img {
+                height: 60px;
+            }
         }
-
-        img {
-            height: 60px;
-        }
-    }
-
-    .big__panel {
-        padding: 30px 50px;
-        background-color: #fff;
-        position: absolute;
-        display: inline-block;
-        bottom: -20px;
-        right: 0;
-        z-index: 100;
-
-        img {
-            width: 360px;
+    
+        .big__panel {
+            padding: 30px 50px;
+            background-color: #fff;
+            position: absolute;
+            display: inline-block;
+            bottom: -20px;
+            right: 0;
+            z-index: 100;
+    
+            img {
+                width: 360px;
+            }
         }
     }
 }

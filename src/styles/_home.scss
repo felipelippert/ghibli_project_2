@@ -1,13 +1,26 @@
 @use 'variables';
 
 .home {
+    position: relative; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: variables.$sectionColor;
-    .container {
-        max-width: 1200px;
+    
+    
+    &__container {
+
+        position: relative;
         width: 100%;
-        padding: 70px 50px 50px;
+        max-width: 1200px;
         text-align: center;
-        font-weight: 400;
+        padding: 70px 50px 50px;
+
+        @media screen and (min-width: 768px) {
+            padding: 50px;
+        }
 
         .title {
             font-size: 30px;

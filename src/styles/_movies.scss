@@ -1,49 +1,42 @@
 @use 'variables';
 
 .movies {
-    &__container {
-        position: relative;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #fff;
-        
+    background-color: #fff;
+    color: bisque;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 
+    &__panel {
+            padding: 40px 30px;
+            max-width: 1200px;
+            min-height: 400px;
+            width: 100%;
         }
-    &__list__panel {
-        position: relative;
-        padding: 40px 30px;
-        max-width: 1200px;
-        min-height: 400px;
-        width: 100%;
-        text-align: center;
-    }
 
-    .movies__list {
+    &__list {
         display: flex;
         flex-direction: row;
-        
+        flex-wrap: wrap;
         justify-content: flex-start;
-
+    
         .poster__holder {
-            padding: 20px;
+            padding: 15px;
             width: 20%;
             display: flex;
             flex-direction: column;
             align-items: stretch;
             justify-content: flex-start;
-            flex-wrap: wrap;
-            .film-poster {
-                display: block;
-                width: 100%;
-                position: relative;
-                background-image: cover;
-                flex-direction: column;
-                flex-wrap: wrap;
+            
 
+            .film-poster {
+                width: 100%;
+                padding-top: 150%;
+                position: relative;
+                background-size: cover;
+                background-position: center center;
             }
         }
     }
+    
 }
