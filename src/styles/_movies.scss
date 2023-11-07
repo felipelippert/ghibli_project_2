@@ -2,8 +2,48 @@
 
 .movies {
     &__container {
+        position: relative;
+        width: 100%;
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: #fff;
+        
 
+        }
+    &__list__panel {
+        position: relative;
+        padding: 40px 30px;
+        max-width: 1200px;
+        min-height: 400px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .movies__list {
+        display: flex;
+        flex-direction: row;
+        
+        justify-content: flex-start;
+
+        .poster__holder {
+            padding: 20px;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            .film-poster {
+                display: block;
+                width: 100%;
+                position: relative;
+                background-image: cover;
+                flex-direction: column;
+                flex-wrap: wrap;
+
+            }
+        }
     }
 }
