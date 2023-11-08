@@ -1,18 +1,26 @@
 @use 'variables';
 
 .movies {
-    background-color: #fff;
-    color: bisque;
+    position: relative;
+    width: 100%;
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
+    align-items: center;
+    background-color: #fff;
 
     &__panel {
-            padding: 40px 30px;
-            max-width: 1200px;
-            min-height: 400px;
-            width: 100%;
+        position: relative;
+        width: 100%;
+        padding: 40px 30px;
+        max-width: 1200px;
+        min-height: 400px;
+
+        @media (max-width: 768px) {
+            padding: 25px 15px;
         }
+    }
 
     &__list {
         display: flex;
@@ -27,6 +35,11 @@
             flex-direction: column;
             align-items: stretch;
             justify-content: flex-start;
+
+            @media (max-width: 768px) {
+                padding: 5px;
+                width: 50%;
+            }
             
 
             .film-poster {
